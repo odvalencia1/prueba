@@ -1,0 +1,137 @@
+{
+ "actions": [],
+ "autoname": "field:cedula",
+ "creation": "2021-11-20 16:08:30.509323",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "codigo",
+  "datos_de_cliente_section",
+  "tipo_documento",
+  "cedula",
+  "nombres",
+  "apellidos",
+  "telefono",
+  "correo_electronico",
+  "direccion",
+  "descripcion"
+ ],
+ "fields": [
+  {
+   "fieldname": "cedula",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "DNI",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "nombres",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nombres",
+   "reqd": 1
+  },
+  {
+   "fieldname": "apellidos",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Apellidos",
+   "reqd": 1
+  },
+  {
+   "fieldname": "telefono",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tel\u00e9fono",
+   "reqd": 1
+  },
+  {
+   "fieldname": "direccion",
+   "fieldtype": "Small Text",
+   "label": "Direcci\u00f3n",
+   "reqd": 1
+  },
+  {
+   "fieldname": "correo_electronico",
+   "fieldtype": "Data",
+   "label": "Correo electr\u00f3nico",
+   "options": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "descripcion",
+   "fieldtype": "Small Text",
+   "label": "Descripci\u00f3n"
+  },
+  {
+   "fieldname": "codigo",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Codigo",
+   "unique": 1
+  },
+  {
+   "fieldname": "datos_de_cliente_section",
+   "fieldtype": "Section Break",
+   "label": "Datos de cliente"
+  },
+  {
+   "fieldname": "tipo_documento",
+   "fieldtype": "Select",
+   "label": "Tipo de Documento",
+   "options": "05-CEDULA\n04-RUC\n06-PASAPORTE\n07-VENTA CONSUMIDOR FINAL\n08-IDENTIFICACION DEL EXTERIOR",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-12-15 19:24:32.364998",
+ "modified_by": "Administrator",
+ "module": "factura",
+ "name": "Cliente",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "codigo",
+ "track_changes": 1
+}

@@ -1,0 +1,149 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2021-12-15 21:28:29.370351",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ruc",
+  "razon_social",
+  "nombre_comercial",
+  "direccion",
+  "logo",
+  "firma_electronica",
+  "password_firma",
+  "column_break_7",
+  "secuencial",
+  "contribuyente_especial_numero",
+  "obli_conta",
+  "tip_emi",
+  "estab",
+  "pto_emi",
+  "ambiente"
+ ],
+ "fields": [
+  {
+   "fieldname": "ruc",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "RUC",
+   "reqd": 1
+  },
+  {
+   "fieldname": "razon_social",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Raz\u00f3n Social",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nombre_comercial",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nombre Comercial",
+   "reqd": 1
+  },
+  {
+   "fieldname": "direccion",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Direcci\u00f3n Matriz",
+   "reqd": 1
+  },
+  {
+   "fieldname": "logo",
+   "fieldtype": "Attach",
+   "label": "Logo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "000000001",
+   "fieldname": "secuencial",
+   "fieldtype": "Data",
+   "label": "Secuencial",
+   "length": 9,
+   "reqd": 1
+  },
+  {
+   "fieldname": "obli_conta",
+   "fieldtype": "Select",
+   "label": "Obligado a Llevar Contabilidad",
+   "options": "SI\nNO",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tip_emi",
+   "fieldtype": "Select",
+   "label": "Tipo Emision ",
+   "options": "1",
+   "reqd": 1
+  },
+  {
+   "default": "001",
+   "fieldname": "estab",
+   "fieldtype": "Data",
+   "label": "Establecimiento",
+   "length": 3,
+   "reqd": 1
+  },
+  {
+   "default": "001",
+   "fieldname": "pto_emi",
+   "fieldtype": "Data",
+   "label": "Punto de Emisi\u00f3n ",
+   "length": 3,
+   "reqd": 1
+  },
+  {
+   "fieldname": "ambiente",
+   "fieldtype": "Select",
+   "label": "Ambiente",
+   "options": "1-PRUEBAS\n2-PRODUCCION",
+   "reqd": 1
+  },
+  {
+   "fieldname": "firma_electronica",
+   "fieldtype": "Attach",
+   "label": "Firma electr\u00f3nica",
+   "reqd": 1
+  },
+  {
+   "fieldname": "password_firma",
+   "fieldtype": "Data",
+   "label": "Contrase\u00f1a firma",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contribuyente_especial_numero",
+   "fieldtype": "Data",
+   "label": "Contribuyente Especial (N\u00famero)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2022-01-12 21:31:46.400301",
+ "modified_by": "Administrator",
+ "module": "factura",
+ "name": "Negocio",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

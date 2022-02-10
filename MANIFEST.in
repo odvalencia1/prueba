@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include facturacion *.css
+recursive-include facturacion *.csv
+recursive-include facturacion *.html
+recursive-include facturacion *.ico
+recursive-include facturacion *.js
+recursive-include facturacion *.json
+recursive-include facturacion *.md
+recursive-include facturacion *.png
+recursive-include facturacion *.py
+recursive-include facturacion *.svg
+recursive-include facturacion *.txt
+recursive-exclude facturacion *.pyc

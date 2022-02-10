@@ -1,0 +1,39 @@
+{
+ "category": "Modules",
+ "charts": [],
+ "creation": "2021-11-29 19:34:14.974491",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "icon": "file-invoice",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "Factura",
+ "links": [],
+ "modified": "2021-11-29 19:39:41.685429",
+ "modified_by": "Administrator",
+ "module": "factura",
+ "name": "Factura",
+ "onboarding": "Website",
+ "owner": "Administrator",
+ "pin_to_bottom": 0,
+ "pin_to_top": 0,
+ "shortcuts": [
+  {
+   "doc_view": "",
+   "label": "Producto",
+   "link_to": "Producto",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Cliente",
+   "link_to": "Cliente",
+   "type": "DocType"
+  }
+ ]
+}

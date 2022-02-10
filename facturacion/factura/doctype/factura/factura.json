@@ -1,0 +1,211 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2021-11-29 19:44:42.138268",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "fecha",
+  "datos_cliente_section",
+  "datos_cliente",
+  "telefono",
+  "correo",
+  "column_break_6",
+  "nombre",
+  "direccion",
+  "detalle_section",
+  "detalle_factura",
+  "subtotal",
+  "iva",
+  "descuento",
+  "total",
+  "naming_series",
+  "amended_from",
+  "datos_tributarios_section",
+  "clave_acceso",
+  "barcode_ca"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "fecha",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Fecha"
+  },
+  {
+   "fieldname": "datos_cliente_section",
+   "fieldtype": "Section Break",
+   "label": "Datos Cliente"
+  },
+  {
+   "fieldname": "detalle_section",
+   "fieldtype": "Section Break",
+   "label": "Detalle"
+  },
+  {
+   "default": "0.0",
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "label": "TOTAL",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "detalle_factura",
+   "fieldtype": "Table",
+   "options": "detalle_factura",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "datos_cliente.codigo",
+   "fieldname": "nombre",
+   "fieldtype": "Data",
+   "in_preview": 1,
+   "label": "Nombre",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "datos_cliente.direccion",
+   "fieldname": "direccion",
+   "fieldtype": "Data",
+   "in_preview": 1,
+   "label": "Direcci\u00f3n",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "datos_cliente.telefono",
+   "fieldname": "telefono",
+   "fieldtype": "Data",
+   "label": "Tel\u00e9fono",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "datos_cliente",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Cliente",
+   "options": "Cliente",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "datos_cliente.correo_electronico",
+   "fieldname": "correo",
+   "fieldtype": "Data",
+   "label": "Correo",
+   "options": "Email",
+   "read_only": 1
+  },
+  {
+   "default": "0.0",
+   "fieldname": "subtotal",
+   "fieldtype": "Currency",
+   "label": "SUBTOTAL",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "default": "0.0",
+   "fieldname": "iva",
+   "fieldtype": "Currency",
+   "label": "IMPUESTOS IVA",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Code",
+   "hidden": 1,
+   "label": "Codigo",
+   "options": "FA-",
+   "print_hide": 1
+  },
+  {
+   "default": "0.00",
+   "fieldname": "descuento",
+   "fieldtype": "Currency",
+   "label": "DESCUENTO",
+   "precision": "2"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Factura",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "datos_tributarios_section",
+   "fieldtype": "Section Break",
+   "label": "Datos Tributarios"
+  },
+  {
+   "fieldname": "clave_acceso",
+   "fieldtype": "Data",
+   "label": "Clave acceso",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "clave_acceso",
+   "fieldname": "barcode_ca",
+   "fieldtype": "Barcode",
+   "label": "Clave acceso c\u00f3digo"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-01-12 21:53:29.655427",
+ "modified_by": "Administrator",
+ "module": "factura",
+ "name": "Factura",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

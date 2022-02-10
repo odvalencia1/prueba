@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "autoname": "field:codigo",
+ "creation": "2021-11-24 23:29:13.815901",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "parte_2_column",
+  "codigo",
+  "nombre",
+  "cantidad",
+  "column_break_5",
+  "precio",
+  "impuesto",
+  "porcentaje",
+  "precio_sin_impuesto",
+  "precio_impuesto"
+ ],
+ "fields": [
+  {
+   "fieldname": "nombre",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nombre",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cantidad",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Cantidad",
+   "reqd": 1
+  },
+  {
+   "fieldname": "precio",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Precio con Impuesto",
+   "reqd": 1
+  },
+  {
+   "fieldname": "parte_2_column",
+   "fieldtype": "Section Break",
+   "label": "Datos de producto"
+  },
+  {
+   "fieldname": "codigo",
+   "fieldtype": "Data",
+   "label": "Codigo",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "impuesto",
+   "fieldtype": "Link",
+   "label": "Impuesto",
+   "options": "Impuesto",
+   "reqd": 1
+  },
+  {
+   "fieldname": "porcentaje",
+   "fieldtype": "Link",
+   "label": "Porcentaje",
+   "options": "Tarifa",
+   "reqd": 1
+  },
+  {
+   "fieldname": "precio_sin_impuesto",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "precio_sin_impuesto"
+  },
+  {
+   "fieldname": "precio_impuesto",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "precio_impuesto"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-12-15 21:03:30.082235",
+ "modified_by": "Administrator",
+ "module": "factura",
+ "name": "Producto",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "User",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "nombre",
+ "track_changes": 1
+}
